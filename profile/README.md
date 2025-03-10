@@ -15,6 +15,7 @@ We continuously share research and findings on mobile security, optimizations, a
 
 ### 📌 Current Project  
  **Crash-Proof Apps: YinkoShield's JNI Tips for Low-End Devices**  
+ 👉 [JNI Hardening Semgrep RuleSet](https://github.com/Yinkoshield/jni-hardening-with-semgrep)  
    - A deep dive into **improving JNI (Java Native Interface) resilience** for budget Android devices.  
    - Covers **best practices for JNI memory management**, preventing crashes, and optimizing JNI performance.  
 
