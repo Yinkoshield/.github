@@ -13,7 +13,17 @@ We are committed to **open research and knowledge sharing** to help developers s
 ## 🔍 Latest Research & Projects  
 We continuously share research and findings on mobile security, optimizations, and performance improvements. This section will be **updated regularly** with our latest work.  
 
-### 📌 Current Project  
+### 📌 Current Project
+ **pinscan: measure TLS certificate pinning instead of taking the app's word for it**  
+ 👉 [pinscan](https://github.com/Yinkoshield/pinscan) (Apache 2.0)  
+   - Tells you, **per host**, whether a mobile app actually pins its TLS certificates, **how well**, and how sure you can be. No Frida, no hooks, no repackaging.  
+   - **Never reports "secure" from silence**: a timeout or a silent connection is `inconclusive`, never a pass.  
+   - Built for **CI**: exit codes, byte-stable baselines, a regression gate, SARIF and JUnit output.  
+   ```sh
+   go install github.com/yinkoshield/pinscan/cmd/pinscan@latest
+   pinscan selftest   # proves the methodology end to end, no device needed
+   ```
+
  **Crash-Proof Apps: YinkoShield's JNI Tips for Low-End Devices**  
  👉 [JNI Hardening Semgrep RuleSet](https://github.com/Yinkoshield/jni-hardening-with-semgrep)  
    - A deep dive into **improving JNI (Java Native Interface) resilience** for budget Android devices.  
